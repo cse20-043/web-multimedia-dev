@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TORONTO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial scale=1">
+    <link rel="stylesheet" href="Torontocss.css">
+
+    <style>
+        fieldset{
+                position: relative;
+                border:1px solid slateblue;
+                border-radius: 8px;
+                padding: 20px;
+            }
+        legend{
+            font-weight: bold;
+            background-color: seashell;
+        }
+        label{
+            padding: 12px 12px 12px 0;
+        }
+        input[type=text]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            background-color: tomato;
+            color: snow;
+            padding: 12px 20px;
+            border-radius: 4px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <header>
+            <div id="divbanner">
+                <h1>
+                    <p id="sitetitle">TORONTO</p>
+                </h1>
+                <h2>
+                    <p id="sitemotto">Diversity Our Strength</p>
+                </h2>
+            </div>
+        </header>
+    </div>
+        <div class="column menu">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="connectwithus.html">CONNECT WITH US</a></li>
+
+                </ul>
+            </nav>
+    </div>
+
+    
+    <section id="section form">   
+        <h3>Connect With Us</h3>
+    
+        <fieldset>
+          <legend><p> Please Subscribe to our Newsletter</p></legend>
+          
+
+          <form name="Newsletter Form" action="thankyou.html" method="GET" target="_self" >
+            <label for="Newsletter" class="lbl">Newsletter:</label>
+            <input type="text" id="Newsletter" name="Newsletter" placeholder="Newsletter" required  oninvalid="this.setCustomValidity('Please Enter Newsletter Here')" oninput="this.setCustomValidity('')" />
+            <br>
+
+            <label for="EmailAddress" class="lbl">EmailAddress:</label>
+            <input type="text" id="EmailAddress" name="EmailAddress" placeholder="EmailAddress" required  oninvalid="this.setCustomValidity('Please Enter EmailAddress Here')" oninput="this.setCustomValidity('')" />
+            <br>
+
+            <label for="firstName" class="lbl">FirstName:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required  oninvalid="this.setCustomValidity('Please Enter Firstname Here')" oninput="this.setCustomValidity('')" />
+            <br>
+
+            <label for="LastName" class="lbl">LastName:</label>
+            <input type="text" id="LastName" name="LastName" placeholder="LastName" required  oninvalid="this.setCustomValidity('Please Enter LastName Here')" oninput="this.setCustomValidity('')" />
+            <br>
+
+            <label for="Country" class="lbl">Country:</label>
+            <input type="text" id="Country" name="Country" placeholder=" Country" required  oninvalid="this.setCustomValidity('Please Enter Country Here')" oninput="this.setCustomValidity('')" />
+            <br>
+
+            <label for="Region" class="lbl">Region:</label>
+            <input type="text" id="Region" name="Region" placeholder=" Region" required  oninvalid="this.setCustomValidity('Please Enter Region Here')" oninput="this.setCustomValidity('')" />
+            <br>
+
+
+            <input type="submit" value="SUBMIT">
+            <input type="submit" value="Cancel">
+        </fieldset>
+
+    
+        </form>
+    </section>
+    
+
+</body>
+
+</html>
